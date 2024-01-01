@@ -11,16 +11,18 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="weather-app">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city.."
             required
             class="search-form-input"
+            id="search-form-input"
           />
           <input type="submit" value="Search" class="search-form-button" />
         </form>
@@ -28,17 +30,18 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city">Tehran</h1>
+            <h1 class="weather-app-city" id="city"></h1>
             <p class="weather-app-details">
-              <span>Sunday 12:00, </span>,
-              <span>Sunny</span>
+              <span id="time"></span>,
+              <span id="description"></span>
               <br />
-              Humidity: <strong>20%</strong>, Wind: <strong>2 km/h</strong>
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind-speed"></strong>
             </p>
           </div>
           <div class="weather-app-temperature-container">
-            <div>🌞</div>
-            <div class="weather-app-temperature">12</div>
+            <div id="icon"></div>
+            <div class="weather-app-temperature" id="temperature"></div>
             <div class="weatehr-app-unit">°C</div>
           </div>
           <div></div>
@@ -49,15 +52,15 @@
         This project is coded by
         <a href="https://github.com/mahshid9574" target="_blank">
           Mahshid Jamali</a
-        >, is
+        >, is open-sourced on
         <a
           href="https://github.com/mahshid9574/Mahshid-s-Weather-App"
           target="_blank"
-          >open-sourced on GitHub</a
+          >GitHub</a
         >
-        and
+        and hosted on
         <a href="https://mahshid-s-weather-app.vercel.app/" target="_blank"
-          >hosted on Vercel</a
+          >Vercel</a
         >
       </footer>
     </div>
