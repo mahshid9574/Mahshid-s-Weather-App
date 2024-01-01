@@ -1,7 +1,6 @@
 body {
   background-color: rgba(228, 160, 247, 0.3);
-
-  font-family: "Kalam", cursive;
+  font-family: cursive;
 }
 
 a {
@@ -29,7 +28,7 @@ header {
   width: 75%;
   font-size: 16px;
   padding: 15px 20px;
-  font-family: "Kalam", cursive;
+  font-family: cursive;
 }
 
 .search-form-button {
@@ -41,7 +40,7 @@ header {
   margin-left: 5px;
   border-radius: 6px;
   color: white;
-  font-family: "Kalam", cursive;
+  font-family: cursive;
 }
 
 main {
